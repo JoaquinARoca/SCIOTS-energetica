@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
 const energeticaSchema = new mongoose.Schema({
-  c: { type: BigInt, required: true },
+  c: { type: String, required: true },
 });
 
 export interface IEnergetica extends mongoose.Document {
-  c: bigint;
+  c: string;
 }
 
 export default mongoose.model("Energetica", energeticaSchema);
